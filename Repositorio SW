@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Form</title>
+  </head>
+  <body>
+
+
+<form action="index.php" method="get">
+<input type="text" name="" value="">
+<input type="text" name="" value="">
+
+<input type="submit" name="" value="">
+
+</form>
+
+  </body>
+</html>
+
+<?php
+
+$meuPrimeiroArray = array();
+
+$meuPrimeiroArray["Nome"] = "Caio Henrique";
+$meuPrimeiroArray["Tel"] = 1199999999;
+$meuPrimeiroArray["Email"] = "caio.silva696@etec.sp.gov.br";
+$meuPrimeiroArray["About"] = "@caio.he";
+$meuPrimeiroArray["SM"] = "@caiohe10";
+var_dump($meuPrimeiroArray);
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+
+foreach ($meuPrimeiroArray as $chave => $value) {
+
+echo "Valor: ". $valor . "<br>";
+
+}
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+$aleatorios = array();
+
+
+for ($i=0; $i < 10; $i++) {
+  $aleatorios [] = rand();
+
+}
+
+var_dump($aleatorios);
+
+$variavel = 53;
+
+if ($variavel % 2 == 0) {
+echo $variavel . "é par";
+}
+
+function ehpar($numero) {
+
+  if ($variavel % 2 == 0) {
+  $retorno = true;
+} else {
+  $retorno = false;
+
+}
+
+return $retorno;
+ }
+
+var dump(ehpar(722));
+
+foreach ($aleatorios as $key => $value) {
+echo "O numero $value ";
+if (ehpar ($value)) {
+  echo "É par";
+} else {
+echo "é Impar";
+}
+echo "<br>";
+ }
+
+
+
+
+
+ ?>
